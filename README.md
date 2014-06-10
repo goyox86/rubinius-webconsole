@@ -1,6 +1,6 @@
 # Rubinius::Webconsole
 
-Web interface for Rubinius VM agent.
+Web interface for Rubinius VM agent console.
 
 ## Installation
 
