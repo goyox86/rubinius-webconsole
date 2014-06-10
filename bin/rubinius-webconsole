@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'rubinius/webconsole/rest_api.rb'
+rescue LoadError => e
+  require 'rubygems'
+  path = File.expand_path '../../lib', __FILE__
+  $:.unshift(path) if File.directory?(path) && !$:.include?(path)
+  require 'rubinius/webconsole/rest_api.rb'
+end
+
+Rubinius::Webconsole::RestApi.run!
